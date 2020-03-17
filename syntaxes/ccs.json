@@ -24,11 +24,11 @@
 			"patterns": [
 				{
 				"name": "keyword.control.ccs",
-				"match": "@\\b(?i)(import|context)\\b"
+				"match": "@(?:import|context)\\b"
 				},
 				{
 				"name": "keyword.other.ccs",
-				"match": "@\\b(?i)(constrain|override)\\b"
+				"match": "@(?:constrain|override)\\b"
 				}
 			]
 		},
@@ -64,7 +64,7 @@
 			"patterns": [
 				{
 				"name": "variable.language.ccs"	,
-				"match": "\\b(?i)\\w+\\b\\s*="
+				"match": "\\b\\w+\\b\\s*="
 				}
 			]
 		},
@@ -72,15 +72,15 @@
 			"patterns": [
 				{
 					"name": "constant.character",
-					"match": "(>|:|;|,)"
+					"match": ">|:|;|,"
 				},
 				{
 					"name": "constant.language",
-					"match": "\\b(?i)(true|false)\\b"
+					"match": "\\b(?:true|false)\\b"
 				},
 				{
 					"name": "constant.numeric",
-					"match": "[-+]?[0-9]+(\\.[0-9]+)?\\b"
+					"match": "\\W+(?x:-?(?:0|[1-9]\\d*)(?:(?:\\.\\d+)?(?:[eE][+-]?\\d+)?)?)\\b"
 				}
 			]
 		}
