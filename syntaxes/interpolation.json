@@ -1,0 +1,19 @@
+{
+    "scopeName": "interpolation.injection",
+    "injectionSelector": "L:string.quoted.double.ccs",
+    "patterns": [
+      {
+        "include": "#variable"
+      }
+    ],
+    "repository": {
+      "variable": {
+          "patterns": [
+              {
+                "name": "variable.language.ccs",
+                "match": "\\${\\b(?i)\\w+\\b}"        
+              }
+          ]
+      }
+    }
+}

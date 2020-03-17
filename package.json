@@ -1,0 +1,32 @@
+{
+    "name": "vsc-ccs-extension",
+    "displayName": "vsc_ccs_extension",
+    "description": "A VSC extension to support CCS work",
+    "publisher": "0",
+    "version": "0.0.2",
+    "engines": {
+        "vscode": "^1.35.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ccs",
+            "aliases": ["ccs", "ccs"],
+            "extensions": [".ccs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ccs",
+            "scopeName": "source.ccs",
+            "path": "./syntaxes/ccs.json"
+        },
+        {
+            "injectTo": ["source.ccs"],
+            "scopeName": "interpolation.injection",
+            "path": "./syntaxes/interpolation.json"
+        }
+        ]
+    }
+}

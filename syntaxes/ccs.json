@@ -1,0 +1,88 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ccs",
+	"scopeName": "source.ccs",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#constants"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+				"name": "keyword.control.ccs",
+				"match": "@\\b(?i)(import|context)\\b"
+				},
+				{
+				"name": "keyword.other.ccs",
+				"match": "@\\b(?i)(constrain|override)\\b"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+				"name": "comment.line.double-slash.ccs",
+				"begin": "//",
+				"end": "\n"
+				},
+				{
+				"name":"comment.block.ccs",
+				"begin": "\/[*]",
+				"end": "[*](\/)"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+				"name":"string.quoted.single.ccs",
+				"begin": "'",
+				"end": "'"
+				},
+				{
+				"name":"string.quoted.double.ccs",
+				"begin": "\"",
+				"end": "\""
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+				"name": "variable.language.ccs"	,
+				"match": "\\b(?i)\\w+\\b\\s*="
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.character",
+					"match": "(>|:|;|,)"
+				},
+				{
+					"name": "constant.language",
+					"match": "\\b(?i)(true|false)\\b"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "[-+]?[0-9]+(\\.[0-9]+)?\\b"
+				}
+			]
+		}
+	}
+}
