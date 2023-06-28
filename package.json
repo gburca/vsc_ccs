@@ -1,10 +1,11 @@
 {
     "name": "vsc-ccs-extension",
-    "displayName": "vsc_ccs_extension",
+    "displayName": "CCS Syntax",
     "description": "A VSC extension to support CCS work",
     "repository": "https://github.com/gburca/vsc_ccs",
-    "publisher": "0",
-    "version": "0.0.2",
+    "publisher": "Gabriel Burca",
+    "version": "0.0.3",
+    "license": "See LICENSE in LICENSE.txt",
     "engines": {
         "vscode": "^1.35.0"
     },
@@ -40,7 +41,7 @@
             }
         ]
     },
-    "dependencies": {
+    "devDependencies": {
         "@vscode/vsce": "^2.19.0"
     }
 }
