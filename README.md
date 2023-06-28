@@ -13,6 +13,9 @@ For CCS details, see https://github.com/hellige/ccs and https://github.com/helli
   your `<home>/.vscode/extensions` folder and restart VSCode.
 
 ## Packaging
-* https://code.visualstudio.com/api/working-with-extensions/publishing-extension
-`npm install @vscode/vsce`
-`./node_modules/.bin/vsce package`
+* Details: https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+* Summary:
+```
+npm install @vscode/vsce
+./node_modules/.bin/vsce package
+```
